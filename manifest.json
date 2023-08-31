@@ -1,0 +1,31 @@
+{
+    "manifest_version" : 2,
+    "name" : "Productivity Management Extension",
+    "version" : "1.0",
+    
+    "content_scripts" : [
+        {
+            "matches" : [
+                "<all_urls>"
+            ],
+            "js" : [ "ns_temp.js"]
+        }
+    ],
+    "background": {
+        "scripts": ["bg_temp.js"]
+    },
+    "permissions": [
+        "activeTab",
+        "webRequest",
+        "webRequestBlocking",
+        "<all_urls>",
+        "management",
+        "tabs",
+        "activeTab"
+    ],
+    "content_security_policy": "script-src 'self' 'unsafe-eval' https://kit.fontawesome.com/c8553119c2.js; object-src 'self'",
+    "browser_action" : {
+        "default_icon" : "effic.png",
+        "default_title": "Increase your Productivity"
+    }
+}

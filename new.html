@@ -1,0 +1,121 @@
+<html>
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" contents ="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-compatible" content="ie=edge">
+        <title>Productivity Management</title> 
+        <link rel="stylesheet" href="newstyle.css">
+        
+        <script src="https://kit.fontawesome.com/c8553119c2.js" crossorigin="anonymous"></script>
+    </head>
+    
+    <body>
+        <div id="title">
+            <header id="main">
+                Productivity Management Extension
+            </header>
+        </div>
+        <div id="cover">
+            
+            
+            <!--Alarm-->
+
+
+            <div class="Alarm">
+                <header>Alarm</header>
+                <input id="alarmTime" type="datetime-local">
+                <input type="text" id="alarmNotif" placeholder="Enter Message with Alarm">
+                <button id="setAlarmButton">Set Alarm</button>
+                <button id="cancelAlarmButton">Cancel Alarm</button>
+
+                <!--- 
+                    <div id="alarmOptions" style="display: none;">
+                    <button onclick="snooze();">Snooze 5 minutes</button>
+                    <button onclick="stopAlarm();">Stop Alarm</button>
+                    </div>
+                ----->
+            </div>
+
+
+            <!--Timer-->
+
+            <div class="timer">
+                <header>Timer</header>
+                <span id="timerAdd">
+                    
+                    <input type="text" id="min" placeholder="Enter Minutes to Work">
+                    <input type="text" id="breakTime" placeholder="Enter Break Time* (in mins)">
+                    <p>*Default Break Time is <b>15 mins</b></p>
+                    <button  id="btn">Start</button>
+                    <!--
+                        <br><br><br><br>
+                        style="display: flex; justify-content: center; align-items: center;
+                        name="min"
+                        <label for="min">Minutes to work:</label>
+                        <p id="countdown"></p><br>
+                    -->
+                </span>
+                <footer><b>Note:</b> During Break,All websites will be <b>BLOCKED</b>.</footer>
+            </div>
+
+            
+    
+    
+            <!--ToDo List -->
+    
+    
+            <div class="wrapper">
+                <header>My To Do List</header>
+                <div id="myDIV" class="header">
+                    <input type="text" id="myInput" placeholder="Enter New Task">
+                    <span id="addBtn"><i class="fas fa-plus"></i></span>
+                </div>
+                
+                <ul id="myUL">
+                    <li>Complete Assignments</li>
+                    <li class="checked">Complete the Project</li>
+                    <li>Learn CP</li>
+                    <li>Prepare for Quiz</li>
+                    <li>Search for Blog's Content</li>
+                    <li>Contest on CF</li>
+                </ul>
+                <footer><b>Tip:</b> Tap on a Task to Mark it as Completed</footer>
+            </div>
+    
+
+            <!--BlackList URL-->
+    
+    
+            <div class="blURL">
+                <header>BlackList URLs</header>
+                <div id="myBL" class="headerBL">
+                    <input type="text" id="myInputBL" placeholder="Enter New URL to BlackList">
+                    <span id="addBtnBL"><i class="fas fa-plus"></i></span>
+                </div>
+                
+                <ul id="myULBL">
+                    <li>www.youtube.com</li>
+                    <li>www.facebook.com</li>
+                    <li>www.instagram.com</li>
+                    <li>www.twitter.com</li>
+                    <li>web.whatsapp.com</li>
+                    <li>telegram.org</li>
+                </ul>
+                <button>Update BlackList</button>
+                <footer><b>Tip:</b> Whenever you make a change to the list, press the <b>Update Blackist</b> Button.</footer>
+            </div>
+
+
+            
+            
+            <footer>
+                Copyright &copy; 2021 AJ Creations, IN
+            </footer>
+        </div>
+
+        
+        
+    </body>
+    <script src="ns_temp.js"></script>
+</html>
